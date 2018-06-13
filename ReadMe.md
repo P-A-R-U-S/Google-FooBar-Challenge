@@ -1,6 +1,6 @@
 # The Google Foo Bar Challenge in Golang 
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/P-A-R-U-S/Golang-CQRS)](https://goreportcard.com/report/github.com/P-A-R-U-S/Golang-CQRS) [![Travis-CI](https://travis-ci.org/P-A-R-U-S/Golang-CQRS.svg?branch=master)](https://travis-ci.org/P-A-R-U-S/Golang-CQRS)
+[![Go Report Card](https://goreportcard.com/badge/github.com/P-A-R-U-S/Google-FooBar-Challenge)](https://goreportcard.com/report/github.com/P-A-R-U-S/Google-FooBar-Challenge) [![Travis-CI](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge.svg?branch=master)](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge)
 
 ## Description
 
@@ -9,9 +9,8 @@ It is a secret process and the challenge consists of coding challenges of increa
 
 ![](screenshot.png)
 
-### Level 1
+## Level 1
 
-===================
 ##### Minion Labor Shifts
 
 Commander Lambda’s minions are upset! They’re given the worst jobs on the whole space station, and some of them are starting to complain that even those worst jobs are being allocated unfairly. If you can fix this problem, it’ll prove your chops to Commander Lambda so you can get promoted!
@@ -19,6 +18,8 @@ Commander Lambda’s minions are upset! They’re given the worst jobs on the wh
 Minions’ tasks are assigned by putting their ID numbers into a list, one time for each day they’ll work that task. As shifts are planned well in advance, the lists for each task will contain up to 99 integers. When a minion is scheduled for the same task too many times, they’ll complain about it until they’re taken off the task completely. Some tasks are worse than others, so the number of scheduled assignments before a minion will refuse to do a task varies depending on the task. You figure you can speed things up by automating the removal of the minions who have been assigned a task too many times before they even get a chance to start complaining.
 
 Write a function called answer(data, n) that takes in a list of less than 100 integers and a number n, and returns that same list but with all of the numbers that occur more than n times removed entirely. The returned list should retain the same ordering as the original list — you don’t want to mix up those carefully-planned shift rotations! For instance, if data was [5, 10, 15, 10, 7] and n was 1, answer(data, n) would return the list [5, 15, 7] because 10 occurs twice, and thus was removed from the list entirely.
+
+[Minion Labor Shifts Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Minion_Labor_Shifts)
 
 ====================
 
@@ -31,3 +32,25 @@ Given two almost identical lists of prisoner IDs x and y where one of the lists 
 For example, given the lists x = [13, 5, 6, 2, 5] and y = [5, 2, 5, 13], the function answer(x, y) would return 6 because the list x contains the integer 6 and the list y doesn't. Given the lists x = [14, 27, 1, 4, 2, 50, 3, 1] and y = [2, 4, -4, 3, 1, 1, 14, 27, 50], the function answer(x, y) would return -4 because the list y contains the integer -4 and the list x doesn't.
 
 In each test case, the lists x and y will always contain n non-unique integers where n is at least 1 but never more than 99, and one of the lists will contain an additional unique integer which should be returned by the function.  The same n non-unique integers will be present on both lists, but they might appear in a different order, like in the examples above. Commander Lambda likes to keep her numbers short, so every prisoner ID will be between -1000 and 1000.
+
+[Prison Labor Dodgers Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Prison_Labor_Dodgers)
+
+
+
+## Level 2
+
+##### En Route Salute
+
+Commander Lambda loves efficiency and hates anything that wastes time. She's a busy lamb, after all! She generously rewards henchmen who identify sources of inefficiency and come up with ways to remove them. You've spotted one such source, and you think solving it will help you build the reputation you need to get promoted.
+
+Every time the Commander's employees pass each other in the hall, each of them must stop and salute each other - one at a time - before resuming their path. A salute is five seconds long, so each exchange of salutes takes a full ten seconds (Commander Lambda's salute is a bit, er, involved). You think that by removing the salute requirement, you could save several collective hours of employee time per day. But first, you need to show her how bad the problem really is.
+
+Write a program that counts how many salutes are exchanged during a typical walk along a hallway. The hall is represented by a string. For example: "--->-><-><-->-"
+
+Each hallway string will contain three different types of characters: '>', an employee walking to the right; '<', an employee walking to the left; and '-', an empty space. Every employee walks at the same speed either to right or to the left, according to their direction. Whenever two employees cross, each of them salutes the other. They then continue walking until they reach the end, finally leaving the hallway. In the above example, they salute 10 times.
+
+Write a function answer(s) which takes a string representing employees walking along a hallway and returns the number of times the employees will salute. s will contain at least 1 and at most 100 characters, each one of -, >, or <
+
+[En Route Salute Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/En_Route_Salute)
+
+====================
