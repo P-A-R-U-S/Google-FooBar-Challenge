@@ -67,8 +67,7 @@ Each array of solar panels contains at least 1 and no more than 50 panels, and e
 [Power Hungry Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/Power_Hungry)
 
 
-
-## Level 2
+## Level 3
 
 ##### Queue To Do
 
