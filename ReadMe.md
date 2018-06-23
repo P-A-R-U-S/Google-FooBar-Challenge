@@ -19,7 +19,7 @@ Minions’ tasks are assigned by putting their ID numbers into a list, one time 
 
 Write a function called answer(data, n) that takes in a list of less than 100 integers and a number n, and returns that same list but with all of the numbers that occur more than n times removed entirely. The returned list should retain the same ordering as the original list — you don’t want to mix up those carefully-planned shift rotations! For instance, if data was [5, 10, 15, 10, 7] and n was 1, answer(data, n) would return the list [5, 15, 7] because 10 occurs twice, and thus was removed from the list entirely.
 
-[Minion Labor Shifts Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Minion_Labor_Shifts)
+["Minion Labor Shifts" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Minion_Labor_Shifts)
 
 ====================
 
@@ -33,7 +33,7 @@ For example, given the lists x = [13, 5, 6, 2, 5] and y = [5, 2, 5, 13], the fun
 
 In each test case, the lists x and y will always contain n non-unique integers where n is at least 1 but never more than 99, and one of the lists will contain an additional unique integer which should be returned by the function.  The same n non-unique integers will be present on both lists, but they might appear in a different order, like in the examples above. Commander Lambda likes to keep her numbers short, so every prisoner ID will be between -1000 and 1000.
 
-[Prison Labor Dodgers Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Prison_Labor_Dodgers)
+["Prison Labor Dodgers" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/Prison_Labor_Dodgers)
 
 ====================
 
@@ -47,6 +47,7 @@ To help you best cut the cake, you have turned the sequence of colors of the M&M
 
 Write a function called answer(s) that, given a non-empty string less than 200 characters in length describing the sequence of M&Ms, returns the maximum number of equal parts that can be cut from the cake without leaving any leftovers.
 
+["The cake is not a lie!" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-1/The_cake_is_not_a_lie)
 
 ## Level 2
 
@@ -62,7 +63,7 @@ Each hallway string will contain three different types of characters: '>', an em
 
 Write a function answer(s) which takes a string representing employees walking along a hallway and returns the number of times the employees will salute. s will contain at least 1 and at most 100 characters, each one of -, >, or <
 
-[En Route Salute Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/En_Route_Salute)
+["En Route Salute" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/En_Route_Salute)
 
 ====================
 
@@ -75,7 +76,7 @@ You need to figure out which sets of panels in any given array you can take offl
 Each array of solar panels contains at least 1 and no more than 50 panels, and each panel will have a power output level whose absolute value is no greater than 1000 (some panels are malfunctioning so badly that they’re draining energy, but you know a trick with the panels’ wave stabilizer that lets you combine two negative-output panels to produce the positive output of the multiple of their power values). The final products may be very large, so give the answer as a string representation of the number.
 
 
-[Power Hungry Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/Power_Hungry)
+["Power Hungry" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-2/Power_Hungry)
 
 
 ## Level 3
@@ -105,7 +106,7 @@ All worker IDs (including the first worker) are between 0 and 2000000000 inclusi
 
 With this information, write a function answer(start, length) that will cover for the missing security checkpoint by outputting the same checksum the guards would normally submit before lunch. You have just enough time to find out the ID of the first worker to be checked (start) and the length of the line (length) before the automatic review occurs, so your program must generate the proper checksum with just those two values.
 
-[Queue To Do Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-3/Queue_To_Do)
+["Queue To Do" Solution](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-3/Queue_To_Do)
 
 
 ====================
@@ -118,4 +119,4 @@ You have maps of parts of the space station, each starting at a prison exit and 
 
 Write a function answer(map) that generates the length of the shortest path from the prison door to the escape pod, where you are allowed to remove one wall as part of your remodeling plans. The path length is the total number of nodes you pass through, counting both the entrance and exit nodes. The starting and ending positions are always passable (0). The map will always be solvable, though you may or may not need to remove a wall. The height and width of the map can be from 2 to 20. Moves can only be made in cardinal directions; no diagonal moves are allowed.
 
-[In progress... Sorry, I need some time for son and family.](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-3/)
+[In progress... Sorry, I need spend some time with son and wife...](https://github.com/P-A-R-U-S/Google-FooBar-Challenge/tree/master/Level-3/)
