@@ -1,6 +1,4 @@
-# The Google Foo Bar Challenge in Golang 
-
-[![Go Report Card](https://goreportcard.com/badge/github.com/P-A-R-U-S/Google-FooBar-Challenge)](https://goreportcard.com/report/github.com/P-A-R-U-S/Google-FooBar-Challenge) [![Travis-CI](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge.svg?branch=master)](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge)
+# The Google Foo Bar Challenge in Golang [![Go Report Card](https://goreportcard.com/badge/github.com/P-A-R-U-S/Google-FooBar-Challenge)](https://goreportcard.com/report/github.com/P-A-R-U-S/Google-FooBar-Challenge) [![Travis-CI](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge.svg?branch=master)](https://travis-ci.org/P-A-R-U-S/Google-FooBar-Challenge)
 
 ## Description
 
