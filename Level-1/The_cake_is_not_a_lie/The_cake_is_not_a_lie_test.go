@@ -9,9 +9,11 @@ func Test_The_cake_is_not_a_lie(t *testing.T) {
 		output int
 	}{
 
-		//{"aa", 2},
-		//{"aaaaaaaaaaaa", 12},
-
+		{"aa", 2},
+		{"aaaaaaaaaaaa", 12},
+		{"aacaac", 2},
+		{"aacaacaac", 3},
+		{"aacaacaacaac", 4},
 		{"abccbaabccba", 2},
 		{"abcabcabcabc", 4},
 		{"abccbaabccbaabccbaabccba", 4},

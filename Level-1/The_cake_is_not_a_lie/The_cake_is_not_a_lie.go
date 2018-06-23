@@ -1,48 +1,45 @@
 package The_cake_is_not_a_lie
 
-import "fmt"
-
 func answer1(x string) int  {
 
+	ret := 1
 	l := len(x)
 
 	var pl []uint8
 	var pr []uint8
 
-	var pls string //fmt.Sprintf("%c",x[0])
-	var prs string //fmt.Sprintf("%c",x[l-1])
+	// Uncomment for Debug
+	//var pls string
+	//var prs string
 
 
 	for i :=0; i < l; i++ {
 		cl := x[i]
 		cr := x[l-1-i]
 
-		pls = fmt.Sprintf("%s%c",pl, cl)
-		prs = fmt.Sprintf("%s%c",pr, cr)
+		// Uncomment for Debug
+		//pls = fmt.Sprintf("%s%c",pl, cl)
+		//prs = fmt.Sprintf("%s%c",pr, cr)
 
 		pl = append(pl, cl)
 		pr = append(pr, cr)
 
 		if i == 0 || pl[0] != cr || pr[0] != cl {
-
-			//pls = fmt.Sprintf("%s%c",pl, cl)
-			//prs = fmt.Sprintf("%c%s",cr, pr)
-
 			continue
-		} else {
-
-			//pls = fmt.Sprintf("%s%c",pl, cl)
-			//prs = fmt.Sprintf("%c%s",cr, pr)
-
-			//pl = append(pl, cl)
-			//pr = append(pr, cr)
-
-			fmt.Println(pls)
-			fmt.Println(prs)
-
-			return l / len(pl)
 		}
+
+		// Uncomment for Debug
+		//fmt.Println(pls)
+		//fmt.Println(prs)
+
+		ret = l / len(pl)
+
+		if len(pl) == 2 && pl[0] == pl[len(pl)-1] {
+			ret = ret * 2
+		}
+		break
+
 	}
 
-	return 1
+	return ret
 }
