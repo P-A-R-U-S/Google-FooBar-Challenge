@@ -9,20 +9,20 @@ func Test_The_cake_is_not_a_lie(t *testing.T) {
 		output int
 	}{
 
-		{"aa", 2},
+		//{"aa", 2},
 		//{"aaaaaaaaaaaa", 12},
 
-		//{"abccbaabccba", 2},
-		//{"abcabcabcabc", 4},
-		//{"abccbaabccbaabccbaabccba", 4},
-		//{"abcabcabcabcabcabcabcabc", 8},
-		//{"abababababababababababab", 12},
-		//{"awwa", 1},
-		//{"awwaawwa", 2},
-		//{"awwaawwaawwa", 3},
-		//{"awwaawwaawwaawwa", 4},
-		//{"a", 1},
-		//{"awwawaawwawa", 2},
+		{"abccbaabccba", 2},
+		{"abcabcabcabc", 4},
+		{"abccbaabccbaabccbaabccba", 4},
+		{"abcabcabcabcabcabcabcabc", 8},
+		{"abababababababababababab", 12},
+		{"awwa", 1},
+		{"awwaawwa", 2},
+		{"awwaawwaawwa", 3},
+		{"awwaawwaawwaawwa", 4},
+		{"a", 1},
+		{"awwawaawwawa", 2},
 	}
 
 	for _,testData := range testDatas {
