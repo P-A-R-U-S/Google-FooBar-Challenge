@@ -17,7 +17,6 @@ func answer(data []int, n int) []int {
 		for j := 0; j < len(data); j++ {
 			if data[j] != data[i] {
 				newValues = append(newValues, data[j])
-				//track++
 			}
 
 			if count <= n && j == i {
