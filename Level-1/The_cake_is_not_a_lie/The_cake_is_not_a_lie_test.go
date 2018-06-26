@@ -25,6 +25,7 @@ func Test_The_cake_is_not_a_lie(t *testing.T) {
 		{"awwaawwaawwaawwa", 4},
 		{"a", 1},
 		{"awwawaawwawa", 2},
+		{"aawaaaawaaaawaa",3},
 	}
 
 	for _,testData := range testDatas {
