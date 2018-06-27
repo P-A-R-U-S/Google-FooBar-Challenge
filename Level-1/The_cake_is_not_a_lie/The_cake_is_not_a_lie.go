@@ -7,28 +7,23 @@ func answer1(x string) int  {
 	ret := 1
 	l := len(x)
 
-	var pl []uint8
-	var pr []uint8
+	pl := x[0]
+	pr := x[l-1]
 
 	for i :=0; i < l; i++ {
 		cl := x[i]
 		cr := x[l-1-i]
-
-		pl = append(pl, cl)
-		pr = append(pr, cr)
-
-		if pl[0] != cr || pr[0] != cl {
+		
+		if pl != cr || pr != cl {
 			continue
 		}
 
-		ret = l / len(pl)
+		ret = l / (i+1)
 
 		//Verify Pattern
-		if strings.Compare(x, strings.Repeat(string([]byte(pl[:])),ret)) != 0 {
+		if strings.Compare(x, strings.Repeat(string([]byte(x[:i + 1])),ret)) != 0 {
 			continue
 		}
-
-		ret = l / len(pl)
 
 		break
 
