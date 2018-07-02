@@ -25,11 +25,11 @@ func Test_The_cake_is_not_a_lie(t *testing.T) {
 		{"awwaawwaawwaawwa", 4},
 		{"a", 1},
 		{"awwawaawwawa", 2},
-		{"aawaaaawaaaawaa",3},
+		{"aawaaaawaaaawaa", 3},
 		{"aaaaaaaaaaaawaa", 1},
 	}
 
-	for _,testData := range testDatas {
+	for _, testData := range testDatas {
 
 		result := answer1(testData.x)
 

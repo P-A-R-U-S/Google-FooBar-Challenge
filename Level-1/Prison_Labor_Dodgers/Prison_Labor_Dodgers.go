@@ -4,11 +4,11 @@ func answer(x []int, y []int) int {
 
 	data := make(map[int]int)
 
-	for i:=0; i < len(x); i++ {
+	for i := 0; i < len(x); i++ {
 		data[x[i]] = 1
 	}
 
-	for i:=0; i < len(y); i++ {
+	for i := 0; i < len(y); i++ {
 		data[x[i]] = -1
 	}
 
